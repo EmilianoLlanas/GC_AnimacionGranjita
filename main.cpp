@@ -32,7 +32,7 @@ void init(void)
  void createScene() {
     glClear(GL_COLOR_BUFFER_BIT);
 
-    //cottage.draw();
+    cottage.draw();
 
     glFlush();
  }
@@ -46,9 +46,9 @@ void init(void)
       //Establece la posicion de la esquina superior izquierda del grafico en la pantalla
       glutInitWindowPosition(100,100);
       //se establece el ancho y la altura de la ventana de visualizacion
-      glutInitWindowSize(400,400);
+      glutInitWindowSize(1200,700);
       //se crea la ventana de visualizacion
-      glutCreateWindow("Circulo");
+      glutCreateWindow("Granja");
       //se ejecuta la funcion de inicializacion de parametros
       init();
       //se envian los graficos a pantalla
