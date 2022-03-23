@@ -174,7 +174,11 @@ private:
         }
     }
 
+<<<<<<< Updated upstream
     void createWall()
+=======
+    void createTorso()
+>>>>>>> Stashed changes
     {
         GLdouble (*p)[3][POINTS] = &renderMatrix;
 
@@ -425,11 +429,20 @@ private:
 public:
     void draw()
     {
+<<<<<<< Updated upstream
         createWall();
         createWindow();
         createStairs();
         createStick();
         createRoof();
+=======
+       /* createWall();
+        createWindow();
+        createStairs();
+        createStick();
+        createRoof();*/
+        createTorso();
+>>>>>>> Stashed changes
     }
 
     Vaca()
@@ -444,4 +457,7 @@ public:
         matrix.multiplication(opMatrix, globalPoints, renderMatrix);
     }
 };
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes

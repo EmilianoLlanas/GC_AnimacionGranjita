@@ -83,32 +83,53 @@
 	<iostream>
 	"punto.cpp"
 
+<<<<<<< Updated upstream
 1648064296 source:c:\users\emiliano (trabajo)\documents\github\gc_animaciongranjita\cottage.cpp
+=======
+1648065239 source:c:\users\emiliano (trabajo)\documents\github\gc_animaciongranjita\cottage.cpp
+>>>>>>> Stashed changes
 	<GL/glut.h>
 	<iostream>
 	"matrix.cpp"
 	"linea.cpp"
 
+<<<<<<< Updated upstream
 1648056855 c:\users\emiliano (trabajo)\documents\github\gc_animaciongranjita\matrix.cpp
 	<math.h>
 	<GL/glut.h>
 
 1648056855 c:\users\emiliano (trabajo)\documents\github\gc_animaciongranjita\linea.cpp
+=======
+1648064971 c:\users\emiliano (trabajo)\documents\github\gc_animaciongranjita\matrix.cpp
+	<math.h>
+	<GL/glut.h>
+
+1648064971 c:\users\emiliano (trabajo)\documents\github\gc_animaciongranjita\linea.cpp
+>>>>>>> Stashed changes
 	<GL/glut.h>
 	<iostream>
 	"punto.cpp"
 
+<<<<<<< Updated upstream
 1648056855 c:\users\emiliano (trabajo)\documents\github\gc_animaciongranjita\punto.cpp
 	<GL/glut.h>
 	<iostream>
 
 1648056855 source:c:\users\emiliano (trabajo)\documents\github\gc_animaciongranjita\main.cpp
+=======
+1648064971 c:\users\emiliano (trabajo)\documents\github\gc_animaciongranjita\punto.cpp
+	<GL/glut.h>
+	<iostream>
+
+1648065711 source:c:\users\emiliano (trabajo)\documents\github\gc_animaciongranjita\main.cpp
+>>>>>>> Stashed changes
 	<GLUT/glut.h>
 	<GL/glut.h>
 	<stdlib.h>
 	<math.h>
 	"cottage.cpp"
 
+<<<<<<< Updated upstream
 1648064286 c:\users\emiliano (trabajo)\documents\github\gc_animaciongranjita\cottage.cpp
 	<GL/glut.h>
 	<iostream>
@@ -116,6 +137,9 @@
 	"linea.cpp"
 
 1648064461 source:c:\users\emiliano (trabajo)\documents\github\gc_animaciongranjita\vaca.cpp
+=======
+1648065239 c:\users\emiliano (trabajo)\documents\github\gc_animaciongranjita\cottage.cpp
+>>>>>>> Stashed changes
 	<GL/glut.h>
 	<iostream>
 	"matrix.cpp"

@@ -7,6 +7,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include "cottage.cpp"
+#include "vaca.cpp"
 #define PI 3.14159265
 #include "vaca.cpp"
 Cottage cottage;
