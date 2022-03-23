@@ -3,9 +3,9 @@
 
 class Punto {
 public:
-    void draw(int ix, int iy, GLfloat red, GLfloat green, GLfloat blue, GLfloat width)
+    void draw(int ix, int iy, GLfloat colors[3], GLfloat width)
     {
-        glColor3f(red, green, blue);
+        glColor3fv(colors);
         glPointSize(width);
 
         glBegin(GL_POINTS);

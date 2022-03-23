@@ -222,23 +222,22 @@ private:
     {
         GLdouble (*p)[3][POINTS] = &renderMatrix;
 
-        GLfloat red = 0.941, green = 0.808, blue = 0.808, width = 3;
+        GLfloat colors[3] = {0.941,0.808,0.620};
+        GLfloat width = 3;
         int x1, y1, x2, y2;
-        //glColor3f(0.941, 0.808, 0.620);
-        //glLineWidth(3);
 
         //Middle
             x1 = (*p)[0][16];
             y1 = (*p)[1][16];
             x2 = (*p)[0][17];
             y2 = (*p)[1][17];
-            linea.draw(x1,y1,x2,y2, red, green, blue, width);
+            linea.draw(x1,y1,x2,y2, colors, width);
 
             x1 = (*p)[0][18];
             y1 = (*p)[1][18];
             x2 = (*p)[0][19];
             y2 = (*p)[1][19];
-            linea.draw(x1,y1,x2,y2, red, green, blue, width);
+            linea.draw(x1,y1,x2,y2, colors, width);
 
         glColor3f(0.267, 0.184, 0.255);
 

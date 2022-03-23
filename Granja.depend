@@ -44,18 +44,18 @@
 	"matrix.cpp"
 	"linea.cpp"
 
-1648006385 c:\users\saman\documents\last one\graficas\gc_animaciongranjita\matrix.cpp
+1648009065 c:\users\saman\documents\last one\graficas\gc_animaciongranjita\matrix.cpp
 	<math.h>
 	<GL/glut.h>
 
-1648006385 source:c:\users\saman\documents\last one\graficas\gc_animaciongranjita\main.cpp
+1648009067 source:c:\users\saman\documents\last one\graficas\gc_animaciongranjita\main.cpp
 	<GLUT/glut.h>
 	<GL/glut.h>
 	<stdlib.h>
 	<math.h>
 	"cottage.cpp"
 
-1648008679 c:\users\saman\documents\last one\graficas\gc_animaciongranjita\cottage.cpp
+1648010015 c:\users\saman\documents\last one\graficas\gc_animaciongranjita\cottage.cpp
 	<GL/glut.h>
 	<iostream>
 	"matrix.cpp"
@@ -65,20 +65,20 @@
 	<math.h>
 	<GL/glut.h>
 
-1648008666 c:\users\saman\documents\last one\graficas\gc_animaciongranjita\linea.cpp
+1648009949 c:\users\saman\documents\last one\graficas\gc_animaciongranjita\linea.cpp
 	<GL/glut.h>
 	<iostream>
 	"punto.cpp"
 
-1648008191 source:c:\users\saman\documents\last one\graficas\gc_animaciongranjita\punto.cpp
+1648009922 source:c:\users\saman\documents\last one\graficas\gc_animaciongranjita\punto.cpp
 	<GL/glut.h>
 	<iostream>
 
-1648008808 c:\users\saman\documents\last one\graficas\gc_animaciongranjita\punto.cpp
+1648009922 c:\users\saman\documents\last one\graficas\gc_animaciongranjita\punto.cpp
 	<GL/glut.h>
 	<iostream>
 
-1648008666 source:c:\users\saman\documents\last one\graficas\gc_animaciongranjita\linea.cpp
+1648009949 source:c:\users\saman\documents\last one\graficas\gc_animaciongranjita\linea.cpp
 	<GL/glut.h>
 	<iostream>
 	"punto.cpp"

@@ -6,7 +6,7 @@
 class Linea {
     Punto punto;
 public:
-    void draw(int x1,int y1,int x2,int y2, GLfloat red, GLfloat green, GLfloat blue, GLfloat width)
+    void draw(int x1,int y1,int x2,int y2, GLfloat colors[3], GLfloat width)
     {
 
       int dx, dy, i, e;
@@ -33,7 +33,7 @@ public:
 
       if(dx > dy) //Caso 1
         {
-          punto.draw(x,y, red, green, blue, width);
+          punto.draw(x,y, colors, width);
           e = 2*dy - dx;
           inc1 = 2*(dy -dx);
           inc2 = 2*dy;
@@ -47,12 +47,12 @@ public:
              }
              else e += inc2;
              x += incx;
-             punto.draw(x,y, red, green, blue, width);
+             punto.draw(x,y, colors, width);
           }
        }
        else
        {
-          punto.draw(x,y, red, green, blue, width);
+          punto.draw(x,y, colors, width);
           e = 2*dx - dy;
           inc1 = 2*( dx - dy);
           inc2 = 2*dx;
@@ -65,7 +65,7 @@ public:
             }
             else e += inc2;
             y += incy;
-            punto.draw(x,y, red, green, blue, width);
+            punto.draw(x,y, colors, width);
         }
       }
      }
