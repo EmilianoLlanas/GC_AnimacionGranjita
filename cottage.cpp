@@ -1,13 +1,30 @@
 
 #include <GL/glut.h>
 #include <iostream>
+<<<<<<< Updated upstream
+=======
+#include "matrix.cpp"
+#include "linea.cpp"
+>>>>>>> Stashed changes
 
 #define POINTS 128
 
 class Cottage {
+
 private:
+<<<<<<< Updated upstream
     GLdouble globalPoints [POINTS][2];
     GLdouble oppMatrix [3][3] = {{1,0,0}, {0,1,0}, {0,0,1}};
+=======
+    Linea linea;
+    GLdouble globalPoints [3][POINTS];
+    GLdouble renderMatrix [3][POINTS];
+
+    //Init like this
+    GLdouble opMatrix [3][3] = {{1,0,0}, {0,1,0}, {0,0,1}};
+
+    MatrixOP matrix;
+>>>>>>> Stashed changes
 
     void loadGlobalPoints()
     {
@@ -91,9 +108,10 @@ private:
         }
 
         //First Roof (34 - 55)
-        int cum = 0;
+        int inc = 0;
         for (i = 0; i < 11; i++) {
 
+<<<<<<< Updated upstream
             globalPoints[i+34][0] = cum;
             globalPoints[i+34][1] = 9;
             //globalPoints[i+34][2] = 1;
@@ -101,14 +119,24 @@ private:
             globalPoints[i+45][0] = cum;
             globalPoints[i+45][1] = 10;
             //globalPoints[i+45][2] = 1;
+=======
+            globalPoints[0][i+34] = inc;
+            globalPoints[1][i+34] = 9;
+            globalPoints[2][i+34] = 1;
 
-            cum += 2 - i%2;
+            globalPoints[0][i+45] = inc;
+            globalPoints[1][i+45] = 10;
+            globalPoints[2][i+45] = 1;
+>>>>>>> Stashed changes
+
+            inc += 2 - i%2;
         }
 
         //Second Roof (56 - 75)
-        cum = 0;
+        inc = 0;
         for (i = 0; i < 10; i++) {
 
+<<<<<<< Updated upstream
             globalPoints[i+56][0] = cum;
             globalPoints[i+56][1] = 10;
             //globalPoints[i+56][2] = 1;
@@ -116,14 +144,24 @@ private:
             globalPoints[i+66][0] = cum;
             globalPoints[i+66][1] = 11;
             //globalPoints[i+66][2] = 1;
+=======
+            globalPoints[0][i+56] = inc;
+            globalPoints[1][i+56] = 10;
+            globalPoints[2][i+56] = 1;
 
-            cum += i%2 + 1;
+            globalPoints[0][i+66] = inc;
+            globalPoints[1][i+66] = 11;
+            globalPoints[2][i+66] = 1;
+>>>>>>> Stashed changes
+
+            inc += i%2 + 1;
         }
 
         //Third Roof (76 - 91)
-        cum = 0;
+        inc = 0;
         for (i = 0; i < 8; i++) {
 
+<<<<<<< Updated upstream
             globalPoints[i+76][0] = cum;
             globalPoints[i+76][1] = 11;
             //globalPoints[i+76][2] = 1;
@@ -131,14 +169,24 @@ private:
             globalPoints[i+84][0] = cum;
             globalPoints[i+84][1] = 12;
             //globalPoints[i+84][2] = 1;
+=======
+            globalPoints[0][i+76] = inc;
+            globalPoints[1][i+76] = 11;
+            globalPoints[2][i+76] = 1;
 
-            cum += 2 - i%2;
+            globalPoints[0][i+84] = inc;
+            globalPoints[1][i+84] = 12;
+            globalPoints[2][i+84] = 1;
+>>>>>>> Stashed changes
+
+            inc += 2 - i%2;
         }
 
         //Fourth Roof (92 - 105)
-        cum = 0;
+        inc = 0;
         for (i = 0; i < 7; i++) {
 
+<<<<<<< Updated upstream
             globalPoints[i+92][0] = cum;
             globalPoints[i+92][1] = 12;
             //globalPoints[i+92][2] = 1;
@@ -146,14 +194,24 @@ private:
             globalPoints[i+99][0] = cum;
             globalPoints[i+99][1] = 13;
             //globalPoints[i+99][2] = 1;
+=======
+            globalPoints[0][i+92] = inc;
+            globalPoints[1][i+92] = 12;
+            globalPoints[2][i+92] = 1;
 
-            cum += i%2 + 1;
+            globalPoints[0][i+99] = inc;
+            globalPoints[1][i+99] = 13;
+            globalPoints[2][i+99] = 1;
+>>>>>>> Stashed changes
+
+            inc += i%2 + 1;
         }
 
         //Fifth Roof (106 - 115)
-        cum = 0;
+        inc = 0;
         for (i = 0; i < 5; i++) {
 
+<<<<<<< Updated upstream
             globalPoints[i+106][0] = cum;
             globalPoints[i+106][1] = 13;
             //globalPoints[i+106][2] = 1;
@@ -161,8 +219,17 @@ private:
             globalPoints[i+111][0] = cum;
             globalPoints[i+111][1] = 14;
             //globalPoints[i+111][2] = 1;
+=======
+            globalPoints[0][i+106] = inc;
+            globalPoints[1][i+106] = 13;
+            globalPoints[2][i+106] = 1;
 
-            cum += 2 - i%2;
+            globalPoints[0][i+111] = inc;
+            globalPoints[1][i+111] = 14;
+            globalPoints[2][i+111] = 1;
+>>>>>>> Stashed changes
+
+            inc += 2 - i%2;
         }
     }
 
@@ -214,10 +281,13 @@ private:
     {
         GLdouble (*p)[POINTS][2] = &globalPoints;
 
-        glColor3f(0.941, 0.808, 0.620);
-        glLineWidth(3);
+        GLfloat red = 0.941, green = 0.808, blue = 0.808, width = 3;
+        int x1, y1, x2, y2;
+        //glColor3f(0.941, 0.808, 0.620);
+        //glLineWidth(3);
 
         //Middle
+<<<<<<< Updated upstream
         glBegin(GL_LINES);
             glVertex2d((*p)[16][0],(*p)[16][1]);
             glVertex2d((*p)[17][0],(*p)[17][1]);
@@ -226,6 +296,19 @@ private:
             glVertex2d((*p)[18][0],(*p)[18][1]);
             glVertex2d((*p)[19][0],(*p)[19][1]);
         glEnd();
+=======
+            x1 = (*p)[0][16];
+            y1 = (*p)[1][16];
+            x2 = (*p)[0][17];
+            y2 = (*p)[1][17];
+            linea.draw(x1,y1,x2,y2, red, green, blue, width);
+
+            x1 = (*p)[0][18];
+            y1 = (*p)[1][18];
+            x2 = (*p)[0][19];
+            y2 = (*p)[1][19];
+            linea.draw(x1,y1,x2,y2, red, green, blue, width);
+>>>>>>> Stashed changes
 
         glColor3f(0.267, 0.184, 0.255);
 
