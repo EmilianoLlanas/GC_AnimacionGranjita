@@ -8,9 +8,9 @@
 #include <math.h>
 #include "cottage.cpp"
 #define PI 3.14159265
-
+#include "vaca.cpp"
 Cottage cottage;
-
+//Vaca vaca;
 void init(void)
 {
      //Establece el color de la ventana de visualizacion
@@ -33,7 +33,7 @@ void init(void)
     glClear(GL_COLOR_BUFFER_BIT);
 
     cottage.draw();
-
+    //vaca.draw();
     glFlush();
  }
 
