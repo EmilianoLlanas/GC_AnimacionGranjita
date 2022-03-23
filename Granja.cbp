@@ -42,8 +42,12 @@
 			<Add library="gdi32" />
 			<Add directory="C:/Program Files/CodeBlocks/MinGW/lib" />
 		</Linker>
+		<Unit filename="circulo.cpp" />
 		<Unit filename="cottage.cpp" />
+		<Unit filename="linea.cpp" />
 		<Unit filename="main.cpp" />
+		<Unit filename="matrix.cpp" />
+		<Unit filename="punto.cpp" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

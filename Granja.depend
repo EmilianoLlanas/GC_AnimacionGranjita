@@ -38,7 +38,7 @@
 	<math.h>
 	<GL/glut.h>
 
-1648008679 source:c:\users\saman\documents\last one\graficas\gc_animaciongranjita\cottage.cpp
+1648010015 source:c:\users\saman\documents\last one\graficas\gc_animaciongranjita\cottage.cpp
 	<GL/glut.h>
 	<iostream>
 	"matrix.cpp"
@@ -65,7 +65,7 @@
 	<math.h>
 	<GL/glut.h>
 
-1648009949 c:\users\saman\documents\last one\graficas\gc_animaciongranjita\linea.cpp
+1648010992 c:\users\saman\documents\last one\graficas\gc_animaciongranjita\linea.cpp
 	<GL/glut.h>
 	<iostream>
 	"punto.cpp"
@@ -78,8 +78,14 @@
 	<GL/glut.h>
 	<iostream>
 
-1648009949 source:c:\users\saman\documents\last one\graficas\gc_animaciongranjita\linea.cpp
+1648010992 source:c:\users\saman\documents\last one\graficas\gc_animaciongranjita\linea.cpp
 	<GL/glut.h>
 	<iostream>
 	"punto.cpp"
+
+1648011059 source:c:\users\saman\documents\last one\graficas\gc_animaciongranjita\circulo.cpp
+	<GL/glut.h>
+	<iostream>
+	<math.h>
+	"linea.cpp"
 
