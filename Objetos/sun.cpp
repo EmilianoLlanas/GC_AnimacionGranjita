@@ -152,10 +152,10 @@ void Sun::createSun() {
 }
 
 void Sun::scaling(GLfloat newscale){
-    printf("solecito %f ",newscale);
+    //printf("solecito %f ",newscale);
 
-    matrix.scaling(newscale+0.1,newscale+0.1,opMatrix);
-    Sleep(15);
+    matrix.scaling(newscale,newscale,opMatrix);
+    //Sleep(15);
     radio = newscale;
     //matrix.multiplication(opMatrix, *globalPoints, *renderMatrix, POINTS);
 }
@@ -165,7 +165,7 @@ void Sun::draw(GLfloat newscale, GLfloat newx)
 
     createSun();
     //scale = newscale;
-    //scaling(newscale);
+    scaling(newscale);
     printf("point %f ",y);
     if(renderMatrix[0][0]>=700){
         x = -2300;
@@ -175,8 +175,6 @@ void Sun::draw(GLfloat newscale, GLfloat newx)
     }else{
         x=newx;
     }
-
-
 
     matrix.translation(x,y,opMatrix);
     matrix.multiplication(opMatrix, *globalPoints, *renderMatrix, POINTS);

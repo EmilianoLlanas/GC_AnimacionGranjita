@@ -46,6 +46,8 @@
 		<Unit filename="Escena/scene.h" />
 		<Unit filename="Herramientas/matrix.cpp" />
 		<Unit filename="Herramientas/matrix.h" />
+		<Unit filename="Objetos/circulo.cpp" />
+		<Unit filename="Objetos/circulo.h" />
 		<Unit filename="Objetos/cottage.cpp" />
 		<Unit filename="Objetos/cottage.h" />
 		<Unit filename="Objetos/linea.cpp" />
