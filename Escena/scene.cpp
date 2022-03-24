@@ -26,7 +26,7 @@ void Scene::sunUpdate(){
 void Scene::update() {
 
     glClear(GL_COLOR_BUFFER_BIT);
-    cottage.draw();
+    draw();
     sunUpdate();
     glFlush();
 
