@@ -280,3 +280,107 @@
 	"tree.h"
 	<cstdio>
 
+1648130887 source:c:\users\churr\documents\github\gc_animaciongranjita\escena\scene.cpp
+	"scene.h"
+
+1648130887 c:\users\churr\documents\github\gc_animaciongranjita\escena\scene.h
+	"../Objetos/cottage.h"
+	"../Objetos/sun.h"
+	"../Objetos/vaca.h"
+	"../Objetos/tree.h"
+
+1648087921 c:\users\churr\documents\github\gc_animaciongranjita\objetos\cottage.h
+	<GL/glut.h>
+	"../Herramientas/matrix.h"
+	"linea.h"
+
+1648083471 c:\users\churr\documents\github\gc_animaciongranjita\herramientas\matrix.h
+	<math.h>
+	<GL/glut.h>
+
+1648077552 c:\users\churr\documents\github\gc_animaciongranjita\objetos\linea.h
+	<GL/glut.h>
+	"punto.h"
+
+1648073794 c:\users\churr\documents\github\gc_animaciongranjita\objetos\punto.h
+	<GL/glut.h>
+
+1648090261 c:\users\churr\documents\github\gc_animaciongranjita\objetos\sun.h
+	<GL/glut.h>
+	<iostream>
+	"../Herramientas/matrix.h"
+	"linea.h"
+	"circulo.h"
+	"triangulo.h"
+	<math.h>
+
+1648090187 c:\users\churr\documents\github\gc_animaciongranjita\objetos\circulo.h
+	<GL/glut.h>
+	<iostream>
+	<math.h>
+	"linea.h"
+
+1648089953 c:\users\churr\documents\github\gc_animaciongranjita\objetos\triangulo.h
+	<GL/glut.h>
+	<iostream>
+	"linea.h"
+
+1648131465 c:\users\churr\documents\github\gc_animaciongranjita\objetos\vaca.h
+	<GL/glut.h>
+	"../Herramientas/matrix.h"
+	"linea.h"
+
+1648130887 c:\users\churr\documents\github\gc_animaciongranjita\objetos\tree.h
+	<GL/glut.h>
+	"../Herramientas/matrix.h"
+	"linea.h"
+
+1648085627 source:c:\users\churr\documents\github\gc_animaciongranjita\herramientas\matrix.cpp
+	<math.h>
+	<iostream>
+	<GL/glut.h>
+	"matrix.h"
+
+1648130887 source:c:\users\churr\documents\github\gc_animaciongranjita\main.cpp
+	<GLUT/glut.h>
+	<GL/glut.h>
+	"Escena/scene.h"
+
+1648090249 source:c:\users\churr\documents\github\gc_animaciongranjita\objetos\circulo.cpp
+	<GL/glut.h>
+	<iostream>
+	<math.h>
+	"circulo.h"
+
+1648089154 source:c:\users\churr\documents\github\gc_animaciongranjita\objetos\cottage.cpp
+	<GL/glut.h>
+	"../Herramientas/matrix.h"
+	"linea.h"
+	"cottage.h"
+
+1648077552 source:c:\users\churr\documents\github\gc_animaciongranjita\objetos\linea.cpp
+	"linea.h"
+
+1648080601 source:c:\users\churr\documents\github\gc_animaciongranjita\objetos\punto.cpp
+	"punto.h"
+
+1648130887 source:c:\users\churr\documents\github\gc_animaciongranjita\objetos\sun.cpp
+	"sun.h"
+
+1648130887 source:c:\users\churr\documents\github\gc_animaciongranjita\objetos\tree.cpp
+	<GL/glut.h>
+	"../Herramientas/matrix.h"
+	"linea.h"
+	"tree.h"
+	<cstdio>
+
+1648089953 source:c:\users\churr\documents\github\gc_animaciongranjita\objetos\triangulo.cpp
+	"triangulo.h"
+
+1648130887 source:c:\users\churr\documents\github\gc_animaciongranjita\objetos\vaca.cpp
+	<GL/glut.h>
+	"../Herramientas/matrix.h"
+	"linea.h"
+	"vaca.h"
+	<cstdio>
+

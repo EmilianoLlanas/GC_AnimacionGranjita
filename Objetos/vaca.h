@@ -11,11 +11,14 @@ class Vaca {
 
 private:
     Linea linea;
+    MatrixOP matrix;
+
     GLdouble altura;
     GLdouble incrementoCabeza;
-    MatrixOP matrix;
+
     GLdouble rotar;
     GLdouble incremento;
+
     bool invertir;
     bool invertir2;
 
@@ -36,11 +39,11 @@ private:
 
     void createCabeza();
 
+    void rotateHead();
+
 public:
 
     void draw();
-
-    void rotateHead();
 
     void setDefaulScale(GLdouble x, GLdouble y);
 
@@ -49,6 +52,7 @@ public:
     void setDefaultRotation(GLdouble x, GLdouble y);
 
     void update();
+
     Vaca();
 };
 
