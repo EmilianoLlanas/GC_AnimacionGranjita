@@ -1,4 +1,4 @@
-#ifndef SCENE_H_INCLUDED
+#ifndef SCENE_H_INCLUDEDC:\Users\saman\Documents\Last one\Graficas\GC_AnimacionGranjita\main.cpp
 #define SCENE_H_INCLUDED
 
 #include "../Objetos/cottage.h"
@@ -16,7 +16,7 @@ private:
     Tree tree1;
 public:
     void draw();
-
+    void sunUpdate();
     void update();
 
     Scene();

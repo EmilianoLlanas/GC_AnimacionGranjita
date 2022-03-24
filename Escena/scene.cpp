@@ -1,5 +1,7 @@
 #include "scene.h"
 
+
+
 Scene::Scene() {
     cottage.setDefaulScale(15, 15);
     cottage.setDefaultTranslation(-40, -15);
@@ -31,5 +33,10 @@ void Scene::update() {
     cottage.draw();
     vaca.update();
 
-   // printf("holiwis");
+    glClear(GL_COLOR_BUFFER_BIT);
+    cottage.draw();
+    sunUpdate();
+    glFlush();
+
+    Sleep(15);
 }
