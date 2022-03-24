@@ -16,6 +16,7 @@
 class Sun {
 private:
     GLfloat radio = 1;
+
     Linea linea;
     Circulo circulo;
     Triangulo triangulo;
@@ -30,10 +31,12 @@ private:
 
     void createSun();
 
-    void scaling(GLfloat scale);
 
 public:
-    void draw();
+    GLfloat scale = 0.5, x = -650, y=3;//x = -650, y=100;
+    void scaling(GLfloat newscale);
+
+    void draw(GLfloat newscale, GLfloat newx);
 
     Sun();
 };
