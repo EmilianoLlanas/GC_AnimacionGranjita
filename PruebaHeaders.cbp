@@ -46,6 +46,7 @@
 		<Unit filename="Escena/scene.h" />
 		<Unit filename="Herramientas/matrix.cpp" />
 		<Unit filename="Herramientas/matrix.h" />
+		<Unit filename="Objetos/circulo.cpp" />
 		<Unit filename="Objetos/cottage.cpp" />
 		<Unit filename="Objetos/cottage.h" />
 		<Unit filename="Objetos/linea.cpp" />
@@ -56,6 +57,8 @@
 		</Unit>
 		<Unit filename="Objetos/sun.cpp" />
 		<Unit filename="Objetos/sun.h" />
+		<Unit filename="Objetos/tree.cpp" />
+		<Unit filename="Objetos/tree.h" />
 		<Unit filename="Objetos/triangulo.cpp" />
 		<Unit filename="Objetos/triangulo.h" />
 		<Unit filename="Objetos/vaca.cpp" />
