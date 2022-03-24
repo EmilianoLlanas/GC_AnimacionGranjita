@@ -367,7 +367,7 @@
 
 
     void Vaca::update(){
-
+        Sleep(40);
        /* matrix.translation(0,altura,opMatrixHead);
        if (altura > .4 && invertir2){
         incrementoCabeza = -.05;

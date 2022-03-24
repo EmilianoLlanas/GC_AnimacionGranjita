@@ -4,12 +4,14 @@
 #include "../Objetos/cottage.h"
 #include "../Objetos/sun.h"
 #include "../Objetos/vaca.h"
+#include "../Objetos/tree.h"
 
 class Scene {
 private:
     Cottage cottage;
     Sun sun;
     Vaca vaca;
+    Tree tree;
 public:
     void draw();
 

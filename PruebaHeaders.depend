@@ -176,13 +176,14 @@
 	<math.h>
 	"circulo.h"
 
-1648101927 source:c:\users\emiliano (trabajo)\documents\github\gc_animaciongranjita\escena\scene.cpp
+1648110191 source:c:\users\emiliano (trabajo)\documents\github\gc_animaciongranjita\escena\scene.cpp
 	"scene.h"
 
-1648097533 c:\users\emiliano (trabajo)\documents\github\gc_animaciongranjita\escena\scene.h
+1648110050 c:\users\emiliano (trabajo)\documents\github\gc_animaciongranjita\escena\scene.h
 	"../Objetos/cottage.h"
 	"../Objetos/sun.h"
 	"../Objetos/vaca.h"
+	"../Objetos/tree.h"
 
 1648094930 c:\users\emiliano (trabajo)\documents\github\gc_animaciongranjita\objetos\cottage.h
 	<GL/glut.h>
@@ -249,7 +250,7 @@
 1648094930 source:c:\users\emiliano (trabajo)\documents\github\gc_animaciongranjita\objetos\triangulo.cpp
 	"triangulo.h"
 
-1648103561 source:c:\users\emiliano (trabajo)\documents\github\gc_animaciongranjita\objetos\vaca.cpp
+1648104580 source:c:\users\emiliano (trabajo)\documents\github\gc_animaciongranjita\objetos\vaca.cpp
 	<GL/glut.h>
 	"../Herramientas/matrix.h"
 	"linea.h"
@@ -266,4 +267,16 @@
 	<iostream>
 	<math.h>
 	"circulo.h"
+
+1648109699 c:\users\emiliano (trabajo)\documents\github\gc_animaciongranjita\objetos\tree.h
+	<GL/glut.h>
+	"../Herramientas/matrix.h"
+	"linea.h"
+
+1648111710 source:c:\users\emiliano (trabajo)\documents\github\gc_animaciongranjita\objetos\tree.cpp
+	<GL/glut.h>
+	"../Herramientas/matrix.h"
+	"linea.h"
+	"tree.h"
+	<cstdio>
 
