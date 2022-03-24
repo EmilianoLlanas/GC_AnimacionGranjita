@@ -16,7 +16,7 @@ Scene::Scene() {
 }
 
 void Scene::draw(){
-    sun.draw();
+    sun.draw(sunscale, x);
     tree.draw();
     tree2.draw();
     tree1.draw();
@@ -25,17 +25,21 @@ void Scene::draw(){
 
 }
 
+
+
 void Scene::update() {
-    sun.draw();
+    glClear(GL_COLOR_BUFFER_BIT);
     tree.draw();
     tree2.draw();
     tree1.draw();
     cottage.draw();
     vaca.update();
 
-    glClear(GL_COLOR_BUFFER_BIT);
+    sunscale=0.1;
+    x = 8;
+    sun.draw(sunscale, x);
+
     draw();
-    sunUpdate();
     glFlush();
 
     Sleep(15);

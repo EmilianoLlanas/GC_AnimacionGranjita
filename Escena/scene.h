@@ -14,6 +14,7 @@ private:
     Tree tree;
     Tree tree2;
     Tree tree1;
+    GLfloat sunscale = 0.5, x = 1 ;
 public:
     void draw();
     void sunUpdate();

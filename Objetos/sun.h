@@ -21,7 +21,7 @@ private:
     Circulo circulo;
     Triangulo triangulo;
 
-    GLfloat scale = 0.5, x = -650, y=3;//x = -650, y=100;
+    GLfloat scale = 0.5, x = -650, y=2;//x = -650, y=100;
 
     GLdouble globalPoints [3][POINTS];
     GLdouble renderMatrix [3][POINTS];

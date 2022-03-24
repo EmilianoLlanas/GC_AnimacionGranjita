@@ -165,12 +165,12 @@ void Sun::draw(GLfloat newscale, GLfloat newx)
     //scaling(newscale);
 
     if(renderMatrix[0][0]>=700){
-        x = 0;
-        y = 2;
-    }else if(renderMatrix[0][0]>=0 && renderMatrix[0][0]>=0){
-        y = -2;
+        x = -2800;
+        y = 1;
+    }else if(renderMatrix[0][0]>=0 && renderMatrix[1][0]>=0){
+        y = -1;
     }else{
-        x=newx;
+        x=5;
     }
 
     matrix.translation(x,y,opMatrix);

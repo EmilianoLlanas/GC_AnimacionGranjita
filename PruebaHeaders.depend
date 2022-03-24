@@ -10,10 +10,10 @@
 	<GL/glut.h>
 	"Escena/scene.h"
 
-1426371328 c:\program files\codeblocks\mingw\include\gl\glut.h
+1645715250 c:\program files\codeblocks\mingw\include\gl\glut.h
 	"freeglut_std.h"
 
-1426371328 c:\program files\codeblocks\mingw\include\gl\freeglut_std.h
+1645715250 c:\program files\codeblocks\mingw\include\gl\freeglut_std.h
 	<windows.h>
 	<EGL/egl.h>
 	<GLES/gl.h>
@@ -96,12 +96,14 @@
 1648090372 source:c:\users\churr\documents\graficas computacionales\pruebaheaders\objetos\sun.cpp
 	"sun.h"
 
-1648134794 source:c:\users\saman\documents\last one\graficas\gc_animaciongranjita\escena\scene.cpp
+1648136041 source:c:\users\saman\documents\last one\graficas\gc_animaciongranjita\escena\scene.cpp
 	"scene.h"
 
-1648134014 c:\users\saman\documents\last one\graficas\gc_animaciongranjita\escena\scene.h
+1648135200 c:\users\saman\documents\last one\graficas\gc_animaciongranjita\escena\scene.h
 	"../Objetos/cottage.h"
 	"../Objetos/sun.h"
+	"../Objetos/vaca.h"
+	"../Objetos/tree.h"
 
 1648134014 c:\users\saman\documents\last one\graficas\gc_animaciongranjita\objetos\cottage.h
 	<GL/glut.h>
@@ -119,7 +121,7 @@
 1648134014 c:\users\saman\documents\last one\graficas\gc_animaciongranjita\objetos\punto.h
 	<GL/glut.h>
 
-1648134823 c:\users\saman\documents\last one\graficas\gc_animaciongranjita\objetos\sun.h
+1648136825 c:\users\saman\documents\last one\graficas\gc_animaciongranjita\objetos\sun.h
 	<GL/glut.h>
 	<iostream>
 	"../Herramientas/matrix.h"
@@ -145,7 +147,7 @@
 	<GL/glut.h>
 	"matrix.h"
 
-1648134014 source:c:\users\saman\documents\last one\graficas\gc_animaciongranjita\main.cpp
+1648134931 source:c:\users\saman\documents\last one\graficas\gc_animaciongranjita\main.cpp
 	<GLUT/glut.h>
 	<GL/glut.h>
 	"Escena/scene.h"
@@ -165,9 +167,13 @@
 1648134014 source:c:\users\saman\documents\last one\graficas\gc_animaciongranjita\objetos\triangulo.cpp
 	"triangulo.h"
 
-1648134014 source:c:\users\saman\documents\last one\graficas\gc_animaciongranjita\objetos\vaca.cpp
+1648134931 source:c:\users\saman\documents\last one\graficas\gc_animaciongranjita\objetos\vaca.cpp
+	<GL/glut.h>
+	"../Herramientas/matrix.h"
+	"linea.h"
+	"vaca.h"
 
-1648134856 source:c:\users\saman\documents\last one\graficas\gc_animaciongranjita\objetos\sun.cpp
+1648136804 source:c:\users\saman\documents\last one\graficas\gc_animaciongranjita\objetos\sun.cpp
 	"sun.h"
 
 1648134014 source:c:\users\saman\documents\last one\graficas\gc_animaciongranjita\objetos\circulo.cpp
@@ -381,5 +387,22 @@
 	"../Herramientas/matrix.h"
 	"linea.h"
 	"vaca.h"
+	<cstdio>
+
+1648134931 c:\users\saman\documents\last one\graficas\gc_animaciongranjita\objetos\vaca.h
+	<GL/glut.h>
+	"../Herramientas/matrix.h"
+	"linea.h"
+
+1648134931 c:\users\saman\documents\last one\graficas\gc_animaciongranjita\objetos\tree.h
+	<GL/glut.h>
+	"../Herramientas/matrix.h"
+	"linea.h"
+
+1648134931 source:c:\users\saman\documents\last one\graficas\gc_animaciongranjita\objetos\tree.cpp
+	<GL/glut.h>
+	"../Herramientas/matrix.h"
+	"linea.h"
+	"tree.h"
 	<cstdio>
 
