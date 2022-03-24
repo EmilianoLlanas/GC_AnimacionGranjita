@@ -7,17 +7,22 @@
 #include "linea.cpp"
 
 class Circulo {
+private:
     Linea linea;
 public:
-    void draw(GLfloat radio, GLfloat xcentro, GLfloat ycentro, GLfloat colors[3], GLfloat width){
+    void draw(GLfloat coord[3], GLfloat colors[3], GLfloat width){
 
-     GLfloat x1, y1, x2, y2, rad;
+     GLfloat radio, x, y, x1, y1, x2, y2, rad;
 
-     x1 = xcentro;
-     y1 = ycentro;
+     radio = coord[0];
+     x = coord[1];
+     y = coord[2];
 
-     x2 = xcentro + radio * ((cos(0)) * (180/PI));
-     y2 = ycentro + radio * ((sin(0)) * (180/PI));
+     x1 = x;
+     y1 = y;
+
+     x2 = x + radio * ((cos(0)) * (180/PI));
+     y2 = y + radio * ((sin(0)) * (180/PI));
 
     for (int i=1; i<360; i++)
     {
@@ -26,8 +31,8 @@ public:
             x1 = x2;
             y1 = y2;
 
-            x2 = xcentro + radio * ((cos(rad)) * (180/PI));
-            y2 = ycentro + radio * ((sin(rad)) * (180/PI));
+            x2 = x + radio * ((cos(rad)) * (180/PI));
+            y2 = y + radio * ((sin(rad)) * (180/PI));
 
             linea.draw(x1,y1,x2,y2, colors, width);
 

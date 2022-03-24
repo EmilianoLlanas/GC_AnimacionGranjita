@@ -1,9 +1,11 @@
+#pragma once
 #include <GL/glut.h>
 #include <iostream>
 
 #include "punto.cpp"
 
 class Linea {
+private:
     Punto punto;
 public:
     void draw(int x1,int y1,int x2,int y2, GLfloat colors[3], GLfloat width)

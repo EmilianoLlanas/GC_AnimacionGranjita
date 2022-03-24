@@ -7,9 +7,12 @@
 #include <stdlib.h>
 #include <math.h>
 #include "cottage.cpp"
+#include "sun.cpp"
+
 #define PI 3.14159265
 
 Cottage cottage;
+Sun sun;
 
 void init(void)
 {
@@ -33,6 +36,7 @@ void init(void)
     glClear(GL_COLOR_BUFFER_BIT);
 
     cottage.draw();
+    sun.draw();
 
     glFlush();
  }
@@ -57,4 +61,4 @@ void init(void)
       glutMainLoop();
 
       return 0;
-  }
+}
