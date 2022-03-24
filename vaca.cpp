@@ -8,10 +8,12 @@
 class Vaca {
 
 private:
+    double angulo;
     Linea linea;
+    GLdouble HeadGlobalPoints [3][POINTS];
     GLdouble globalPoints [3][POINTS];
     GLdouble renderMatrix [3][POINTS];
-
+    GLdouble HeadRenderMatrix [3][POINTS];
     //Init like this
     GLdouble opMatrix [3][3] = {{1,0,0}, {0,1,0}, {0,0,1}};
 
@@ -21,156 +23,285 @@ private:
     {
         int i;
 
-        //Wall Left-Right Points
-        for (i = 0; i < 5; i++) {
-            globalPoints[0][i] = 0;
-            globalPoints[1][i] = 2*i;
-            globalPoints[2][i] = 1;
 
-            globalPoints[0][i+6] = 11;
-            globalPoints[1][i+6] = 2*i;
-            globalPoints[2][i+6] = 1;
-        }
+        //cuerpo
+        globalPoints[0][0] = 0;
+        globalPoints[1][0] = 0;
+        globalPoints[2][0] = 1;
 
-        globalPoints[0][5] = 0;
-        globalPoints[1][5] = 9;
+        globalPoints[0][1] = 2;
+        globalPoints[1][1] = 0;
+        globalPoints[2][1] = 1;
+
+        globalPoints[0][2] = 2;
+        globalPoints[1][2] = 3;
+        globalPoints[2][2] = 1;
+
+        globalPoints[0][3] = 4;
+        globalPoints[1][3] = 3;
+        globalPoints[2][3] = 1;
+
+        globalPoints[0][4] = 4;
+        globalPoints[1][4] = 3;
+        globalPoints[2][4] = 1;
+
+        globalPoints[0][5] = 4;
+        globalPoints[1][5] = 0;
         globalPoints[2][5] = 1;
 
-        globalPoints[0][11] = 11;
-        globalPoints[1][11] = 9;
+        globalPoints[0][6] = 6;
+        globalPoints[1][6] = 0;
+        globalPoints[2][6] = 1;
+
+        globalPoints[0][7] = 6;
+        globalPoints[1][7] = 3;
+        globalPoints[2][7] = 1;
+
+        globalPoints[0][8] = 10;
+        globalPoints[1][8] = 3;
+        globalPoints[2][8] = 1;
+
+        globalPoints[0][9] = 10;
+        globalPoints[1][9] = 0;
+        globalPoints[2][9] = 1;
+
+        globalPoints[0][10] = 12;
+        globalPoints[1][10] = 0;
+        globalPoints[2][10] = 1;
+
+        globalPoints[0][11] = 12;
+        globalPoints[1][11] = 3;
         globalPoints[2][11] = 1;
 
-        //Window Left-Right Points
-        for (i = 0; i < 2; i++) {
-            globalPoints[0][i+12] = 5;
-            globalPoints[1][i+12] = 4*i+4;
-            globalPoints[2][i+12] = 1;
+        globalPoints[0][12] = 14;
+        globalPoints[1][12] = 3;
+        globalPoints[2][12] = 1;
 
-            globalPoints[0][i+14] = 8;
-            globalPoints[1][i+14] = 4*i+4;
-            globalPoints[2][i+14] = 1;
-        }
+        globalPoints[0][13] = 14;
+        globalPoints[1][13] = 0;
+        globalPoints[2][13] = 1;
 
-        //Window Middle Points
-        globalPoints[0][16] = 7;
-        globalPoints[1][16] = 4;
+        globalPoints[0][14] = 16;
+        globalPoints[1][14] = 0;
+        globalPoints[2][14] = 1;
+
+        globalPoints[0][15] = 16;
+        globalPoints[1][15] = 3;
+        globalPoints[2][15] = 1;
+
+        globalPoints[0][16] = 17;
+        globalPoints[1][16] = 3;
         globalPoints[2][16] = 1;
 
-        globalPoints[0][17] = 7;
-        globalPoints[1][17] = 8;
+        globalPoints[0][17] = 17;
+        globalPoints[1][17] = 4;
         globalPoints[2][17] = 1;
 
-        globalPoints[0][18] = 5;
-        globalPoints[1][18] = 6;
+        globalPoints[0][18] = 18;
+        globalPoints[1][18] = 4;
         globalPoints[2][18] = 1;
 
-        globalPoints[0][19] = 8;
-        globalPoints[1][19] = 6;
+        globalPoints[0][19] = 18;
+        globalPoints[1][19] = 5;
         globalPoints[2][19] = 1;
 
-        //Stairs Points
-        for (i = 0; i < 3; i++) {
-            globalPoints[0][i+22] = 11;
-            globalPoints[1][i+22] = i;
-            globalPoints[2][i+22] = 1;
+        globalPoints[0][20] = 16;
+        globalPoints[1][20] = 5;
+        globalPoints[2][20] = 1;
 
-            globalPoints[0][i+25] = 12;
-            globalPoints[1][i+25] = i;
-            globalPoints[2][i+25] = 1;
-        }
+        globalPoints[0][21] = 16;
+        globalPoints[1][21] = 6;
+        globalPoints[2][21] = 1;
 
-        globalPoints[0][28] = 13;
-        globalPoints[1][28] = 0;
+        globalPoints[0][22] = 15;
+        globalPoints[1][22] = 6;
+        globalPoints[2][22] = 1;
+
+        globalPoints[0][23] = 15;
+        globalPoints[1][23] = 9;
+        globalPoints[2][23] = 1;
+
+        globalPoints[0][24] = 0;
+        globalPoints[1][24] = 9;
+        globalPoints[2][24] = 1;
+
+        globalPoints[0][25] = -1;
+        globalPoints[1][25] = 9;
+        globalPoints[2][25] = 1;
+
+        globalPoints[0][26] = -2;
+        globalPoints[1][26] = 8;
+        globalPoints[2][26] = 1;
+
+        globalPoints[0][27] = -2;
+        globalPoints[1][27] = 5;
+        globalPoints[2][27] = 1;
+
+        globalPoints[0][28] = -3;
+        globalPoints[1][28] = 4;
         globalPoints[2][28] = 1;
 
-        globalPoints[0][29] = 13;
-        globalPoints[1][29] = 1;
+        globalPoints[0][29] = -2;
+        globalPoints[1][29] = 4;
         globalPoints[2][29] = 1;
 
-        //Stick Point
-        for (i = 0; i < 2; i++) {
-            globalPoints[0][i+30] = 14.5;
-            globalPoints[1][i+30] = i*9;
-            globalPoints[2][i+30] = 1;
+        globalPoints[0][30] = -1;
+        globalPoints[1][30] = 3;
+        globalPoints[2][30] = 1;
 
-            globalPoints[0][i+32] = 15;
-            globalPoints[1][i+32] = i*9;
-            globalPoints[2][i+32] = 1;
-        }
+        globalPoints[0][31] = -1;
+        globalPoints[1][31] = 8;
+        globalPoints[2][31] = 1;
 
-        //First Roof (34 - 55)
-        int inc = 0;
-        for (i = 0; i < 11; i++) {
+        globalPoints[0][32] = 0;
+        globalPoints[1][32] = 8;
+        globalPoints[2][32] = 1;
 
-            globalPoints[0][i+34] = inc;
-            globalPoints[1][i+34] = 9;
-            globalPoints[2][i+34] = 1;
+        globalPoints[0][33] = 0;
+        globalPoints[1][33] = 0;
+        globalPoints[2][33] = 1;
 
-            globalPoints[0][i+45] = inc;
-            globalPoints[1][i+45] = 10;
-            globalPoints[2][i+45] = 1;
+        //cabeza
+        globalPoints[0][34] = 13;
+        globalPoints[1][34] = 12;
+        globalPoints[2][34] = 1;
 
-            inc += 2 - i%2;
-        }
+        globalPoints[0][35] = 13;
+        globalPoints[1][35] = 11;
+        globalPoints[2][35] = 1;
 
-        //Second Roof (56 - 75)
-        inc = 0;
-        for (i = 0; i < 10; i++) {
+        globalPoints[0][36] = 14;
+        globalPoints[1][36] = 11;
+        globalPoints[2][36] = 1;
 
-            globalPoints[0][i+56] = inc;
-            globalPoints[1][i+56] = 10;
-            globalPoints[2][i+56] = 1;
+        globalPoints[0][37] = 14;
+        globalPoints[1][37] = 10;
+        globalPoints[2][37] = 1;
 
-            globalPoints[0][i+66] = inc;
-            globalPoints[1][i+66] = 11;
-            globalPoints[2][i+66] = 1;
+        globalPoints[0][38] = 15;
+        globalPoints[1][38] = 10;
+        globalPoints[2][38] = 1;
 
-            inc += i%2 + 1;
-        }
+        globalPoints[0][39] = 15;
+        globalPoints[1][39] = 6;
+        globalPoints[2][39] = 1;
 
-        //Third Roof (76 - 91)
-        inc = 0;
-        for (i = 0; i < 8; i++) {
+        globalPoints[0][40] = 16;
+        globalPoints[1][40] = 6;
+        globalPoints[2][40] = 1;
 
-            globalPoints[0][i+76] = inc;
-            globalPoints[1][i+76] = 11;
-            globalPoints[2][i+76] = 1;
+        globalPoints[0][41] = 16;
+        globalPoints[1][41] = 5;
+        globalPoints[2][41] = 1;
 
-            globalPoints[0][i+84] = inc;
-            globalPoints[1][i+84] = 12;
-            globalPoints[2][i+84] = 1;
+        globalPoints[0][42] = 21;
+        globalPoints[1][42] = 5;
+        globalPoints[2][42] = 1;
 
-            inc += 2 - i%2;
-        }
+        globalPoints[0][43] = 21;
+        globalPoints[1][43] = 8;
+        globalPoints[2][43] = 1;
 
-        //Fourth Roof (92 - 105)
-        inc = 0;
-        for (i = 0; i < 7; i++) {
+        globalPoints[0][44] = 19;
+        globalPoints[1][44] = 8;
+        globalPoints[2][44] = 1;
 
-            globalPoints[0][i+92] = inc;
-            globalPoints[1][i+92] = 12;
-            globalPoints[2][i+92] = 1;
+        globalPoints[0][45] = 19;
+        globalPoints[1][45] = 10;
+        globalPoints[2][45] = 1;
 
-            globalPoints[0][i+99] = inc;
-            globalPoints[1][i+99] = 13;
-            globalPoints[2][i+99] = 1;
+        globalPoints[0][46] = 20;
+        globalPoints[1][46] = 10;
+        globalPoints[2][46] = 1;
 
-            inc += i%2 + 1;
-        }
+        globalPoints[0][47] = 20;
+        globalPoints[1][47] = 11;
+        globalPoints[2][47] = 1;
 
-        //Fifth Roof (106 - 115)
-        inc = 0;
-        for (i = 0; i < 5; i++) {
+        globalPoints[0][48] = 21;
+        globalPoints[1][48] = 11;
+        globalPoints[2][48] = 1;
 
-            globalPoints[0][i+106] = inc;
-            globalPoints[1][i+106] = 13;
-            globalPoints[2][i+106] = 1;
+        globalPoints[0][49] = 21;
+        globalPoints[1][49] = 12;
+        globalPoints[2][49] = 1;
 
-            globalPoints[0][i+111] = inc;
-            globalPoints[1][i+111] = 14;
-            globalPoints[2][i+111] = 1;
+        globalPoints[0][50] = 18;
+        globalPoints[1][50] = 12;
+        globalPoints[2][50] = 1;
 
-            inc += 2 - i%2;
+        globalPoints[0][51] = 18;
+        globalPoints[1][51] = 11;
+        globalPoints[2][51] = 1;
+
+        globalPoints[0][52] = 16;
+        globalPoints[1][52] = 11;
+        globalPoints[2][52] = 1;
+
+        globalPoints[0][53] = 16;
+        globalPoints[1][53] = 12;
+        globalPoints[2][53] = 1;
+
+        globalPoints[0][54] = 13;
+        globalPoints[1][54] = 12;
+        globalPoints[2][54] = 1;
+
+        //ojo1
+        globalPoints[0][55] = 16;
+        globalPoints[1][55] = 10;
+        globalPoints[2][55] = 1;
+
+        globalPoints[0][56] = 16;
+        globalPoints[1][56] = 8;
+        globalPoints[2][56] = 1;
+
+        globalPoints[0][57] = 17;
+        globalPoints[1][57] = 8;
+        globalPoints[2][57] = 1;
+
+        globalPoints[0][58] = 17;
+        globalPoints[1][58] = 10;
+        globalPoints[2][58] = 1;
+
+        globalPoints[0][59] = 16;
+        globalPoints[1][59] = 10;
+        globalPoints[2][59] = 1;
+
+        //ojo2
+
+        globalPoints[0][60] = 18;
+        globalPoints[1][60] = 10;
+        globalPoints[2][60] = 1;
+
+        globalPoints[0][61] = 18;
+        globalPoints[1][61] = 8;
+        globalPoints[2][61] = 1;
+
+        globalPoints[0][62] = 19;
+        globalPoints[1][62] = 8;
+        globalPoints[2][62] = 1;
+
+        globalPoints[0][63] = 19;
+        globalPoints[1][63] = 10;
+        globalPoints[2][63] = 1;
+
+        globalPoints[0][64] = 18;
+        globalPoints[1][64] = 10;
+        globalPoints[2][64] = 1;
+
+        //boca
+        globalPoints[0][65] = 19;
+        globalPoints[1][65] = 8;
+        globalPoints[2][65] = 1;
+
+        globalPoints[0][66] = 19;
+        globalPoints[1][66] = 5;
+        globalPoints[2][66] = 1;
+
+        for(int i=34;i<=66;i++){
+            HeadGlobalPoints[0][i]=globalPoints[0][i];
+            HeadGlobalPoints[1][i]=globalPoints[1][i];
+            HeadGlobalPoints[2][i]=globalPoints[2][i];
         }
     }
 
@@ -180,259 +311,70 @@ private:
     {
         GLdouble (*p)[3][POINTS] = &renderMatrix;
 
-        glColor3f(0.612, 0.365, 0.306);
+        glColor3f(0, 0, 0);
         glLineWidth(3);
-
-        //Horizontal
-        glBegin(GL_LINES);
-            glVertex2d((*p)[0][0],(*p)[1][0]);
-            glVertex2d((*p)[0][5],(*p)[1][5]);
-        glEnd();
-        glBegin(GL_LINES);
-            glVertex2d((*p)[0][6],(*p)[1][6]);
-            glVertex2d((*p)[0][11],(*p)[1][11]);
-        glEnd();
-
-        //Vertical
-        glBegin(GL_LINES);
-            glVertex2d((*p)[0][0],(*p)[1][0]);
-            glVertex2d((*p)[0][6],(*p)[1][6]);
-        glEnd();
-        glBegin(GL_LINES);
-            glVertex2d((*p)[0][1],(*p)[1][1]);
-            glVertex2d((*p)[0][7],(*p)[1][7]);
-        glEnd();
-        glBegin(GL_LINES);
-            glVertex2d((*p)[0][1],(*p)[1][2]);
-            glVertex2d((*p)[0][8],(*p)[1][8]);
-        glEnd();
-        glBegin(GL_LINES);
-            glVertex2d((*p)[0][3],(*p)[1][3]);
-            glVertex2d((*p)[0][9],(*p)[1][9]);
-        glEnd();
-        glBegin(GL_LINES);
-            glVertex2d((*p)[0][4],(*p)[1][4]);
-            glVertex2d((*p)[0][10],(*p)[1][10]);
-        glEnd();
-        glBegin(GL_LINES);
-            glVertex2d((*p)[0][5],(*p)[1][5]);
-            glVertex2d((*p)[0][11],(*p)[1][11]);
-        glEnd();
-    }
-
-    void createWindow()
-    {
-        GLdouble (*p)[3][POINTS] = &renderMatrix;
-
-        GLfloat colors[3] = {0.941,0.808,0.620};
-        GLfloat width = 3;
-        int x1, y1, x2, y2;
-
-        //Middle
-            x1 = (*p)[0][16];
-            y1 = (*p)[1][16];
-            x2 = (*p)[0][17];
-            y2 = (*p)[1][17];
-            linea.draw(x1,y1,x2,y2, colors, width);
-
-            x1 = (*p)[0][18];
-            y1 = (*p)[1][18];
-            x2 = (*p)[0][19];
-            y2 = (*p)[1][19];
-            linea.draw(x1,y1,x2,y2, colors, width);
-
-        glColor3f(0.267, 0.184, 0.255);
-
-        //Outline
-        glBegin(GL_LINES);
-            glVertex2d((*p)[0][12],(*p)[1][12]);
-            glVertex2d((*p)[0][13],(*p)[1][13]);
-        glEnd();
-        glBegin(GL_LINES);
-            glVertex2d((*p)[0][14],(*p)[1][14]);
-            glVertex2d((*p)[0][15],(*p)[1][15]);
-        glEnd();
-        glBegin(GL_LINES);
-            glVertex2d((*p)[0][12],(*p)[1][12]);
-            glVertex2d((*p)[0][14],(*p)[1][14]);
-        glEnd();
-        glBegin(GL_LINES);
-            glVertex2d((*p)[0][13],(*p)[1][13]);
-            glVertex2d((*p)[0][15],(*p)[1][15]);
-        glEnd();
-    }
-
-    void createStairs()
-    {
-        GLdouble (*p)[3][POINTS]= &renderMatrix;
-
-        glColor3f(0.345, 0.220, 0.263);
-        glLineWidth(3);
-
-        //First Level
-        glBegin(GL_LINES);
-            glVertex2d((*p)[0][22],(*p)[1][22]);
-            glVertex2d((*p)[0][28],(*p)[1][28]);
-        glEnd();
-        glBegin(GL_LINES);
-            glVertex2d((*p)[0][23],(*p)[1][23]);
-            glVertex2d((*p)[0][29],(*p)[1][29]);
-        glEnd();
-        glBegin(GL_LINES);
-            glVertex2d((*p)[0][25],(*p)[1][25]);
-            glVertex2d((*p)[0][26],(*p)[1][26]);
-        glEnd();
-        glBegin(GL_LINES);
-            glVertex2d((*p)[0][28],(*p)[1][28]);
-            glVertex2d((*p)[0][29],(*p)[1][29]);
-        glEnd();
-
-        //Second Level
-        glBegin(GL_LINES);
-            glVertex2d((*p)[0][24],(*p)[1][24]);
-            glVertex2d((*p)[0][27],(*p)[1][27]);
-        glEnd();
-        glBegin(GL_LINES);
-            glVertex2d((*p)[0][26],(*p)[1][26]);
-            glVertex2d((*p)[0][27],(*p)[1][27]);
-        glEnd();
-    }
-
-    void createStick()
-    {
-        GLdouble (*p)[3][POINTS] = &renderMatrix;
-
-        glColor3f(0.941, 0.808, 0.620);
-        glLineWidth(3);
-
-        //Middle
-        glBegin(GL_LINES);
-            glVertex2d((*p)[0][30],(*p)[1][30]);
-            glVertex2d((*p)[0][31],(*p)[1][31]);
-        glEnd();
-        glBegin(GL_LINES);
-            glVertex2d((*p)[0][30],(*p)[1][30]);
-            glVertex2d((*p)[0][32],(*p)[1][32]);
-        glEnd();
-        glBegin(GL_LINES);
-            glVertex2d((*p)[0][32],(*p)[1][32]);
-            glVertex2d((*p)[0][33],(*p)[1][33]);
-        glEnd();
-    }
-
-    void createRoof()
-    {
-        GLdouble (*p)[3][POINTS] = &renderMatrix;
         int i;
+        for(i=0;i<33;i++){
 
-        glColor3f(0.271, 0.176, 0.231);
-        glLineWidth(3);
-
-        //First Level
-            //Horizontal
-            glBegin(GL_LINES);
-                glVertex2d((*p)[0][34],(*p)[1][34]);
-                glVertex2d((*p)[0][44],(*p)[1][44]);
-            glEnd();
-            glBegin(GL_LINES);
-                glVertex2d((*p)[0][45],(*p)[1][45]);
-                glVertex2d((*p)[0][55],(*p)[1][55]);
-            glEnd();
-
-            //Vertical
-            for (i = 0; i < 11; i++) {
-                glBegin(GL_LINES);
-                    glVertex2d((*p)[0][34 + i],(*p)[1][34 + i]);
-                    glVertex2d((*p)[0][45 + i],(*p)[1][45 + i]);
-                glEnd();
-            }
-
-        //Second Level
-            //Horizontal
-            glBegin(GL_LINES);
-                glVertex2d((*p)[0][56],(*p)[1][56]);
-                glVertex2d((*p)[0][65],(*p)[1][65]);
-            glEnd();
-            glBegin(GL_LINES);
-                glVertex2d((*p)[0][66],(*p)[1][66]);
-                glVertex2d((*p)[0][75],(*p)[1][75]);
-            glEnd();
-
-            //Vertical
-            for (i = 0; i < 10; i++) {
-                glBegin(GL_LINES);
-                    glVertex2d((*p)[0][56 + i],(*p)[1][56 + i]);
-                    glVertex2d((*p)[0][66 + i],(*p)[1][66 + i]);
-                glEnd();
-            }
-
-        //Third Level
-            //Horizontal
-            glBegin(GL_LINES);
-                glVertex2d((*p)[0][76],(*p)[1][76]);
-                glVertex2d((*p)[0][83],(*p)[1][83]);
-            glEnd();
-            glBegin(GL_LINES);
-                glVertex2d((*p)[0][84],(*p)[1][84]);
-                glVertex2d((*p)[0][91],(*p)[1][91]);
-            glEnd();
-
-            //Vertical
-            for (i = 0; i < 8; i++) {
-                glBegin(GL_LINES);
-                    glVertex2d((*p)[0][76 + i],(*p)[1][76 + i]);
-                    glVertex2d((*p)[0][84 + i],(*p)[1][84 + i]);
-                glEnd();
-            }
-
-        //Fouth Level
-            //Horizontal
-            glBegin(GL_LINES);
-                glVertex2d((*p)[0][92],(*p)[1][92]);
-                glVertex2d((*p)[0][98],(*p)[1][98]);
-            glEnd();
-            glBegin(GL_LINES);
-                glVertex2d((*p)[0][99],(*p)[1][99]);
-                glVertex2d((*p)[0][105],(*p)[1][105]);
-            glEnd();
-
-            //Vertical
-            for (i = 0; i < 7; i++) {
-                glBegin(GL_LINES);
-                    glVertex2d((*p)[0][92 + i],(*p)[1][92 + i]);
-                    glVertex2d((*p)[0][99 + i],(*p)[1][99 + i]);
-                glEnd();
-            }
-
-        //Fifth Level
-            //Horizontal
-            glBegin(GL_LINES);
-                glVertex2d((*p)[0][106],(*p)[1][106]);
-                glVertex2d((*p)[0][110],(*p)[1][110]);
-            glEnd();
-            glBegin(GL_LINES);
-                glVertex2d((*p)[0][111],(*p)[1][111]);
-                glVertex2d((*p)[0][115],(*p)[1][115]);
-            glEnd();
-
-            //Vertical
-            for (i = 0; i < 5; i++) {
-                glBegin(GL_LINES);
-                    glVertex2d((*p)[0][106 + i],(*p)[1][106 + i]);
-                    glVertex2d((*p)[0][111 + i],(*p)[1][111 + i]);
-                glEnd();
-            }
+        glBegin(GL_LINES);
+            glVertex2d((*p)[0][i],(*p)[1][i]);
+            glVertex2d((*p)[0][i+1],(*p)[1][i+1]);
+        glEnd();
+        }
     }
+
+    void createCabeza()
+
+    {
+        GLdouble (*p)[3][POINTS] = &HeadRenderMatrix;
+
+        glColor3f(0, 0, 0);
+        glLineWidth(3);
+        int i;
+        for(i=34;i<54;i++){
+
+        glBegin(GL_LINES);
+            glVertex2d((*p)[0][i],(*p)[1][i]);
+            glVertex2d((*p)[0][i+1],(*p)[1][i+1]);
+        glEnd();
+        }
+
+        //ojo1
+
+       for(i=55;i<59;i++){
+
+        glBegin(GL_LINES);
+            glVertex2d((*p)[0][i],(*p)[1][i]);
+            glVertex2d((*p)[0][i+1],(*p)[1][i+1]);
+        glEnd();
+        }
+
+        //ojo2
+
+       for(i=60;i<64;i++){
+
+        glBegin(GL_LINES);
+            glVertex2d((*p)[0][i],(*p)[1][i]);
+            glVertex2d((*p)[0][i+1],(*p)[1][i+1]);
+        glEnd();
+        }
+        //boca
+        glBegin(GL_LINES);
+            glVertex2d((*p)[0][65],(*p)[1][65]);
+            glVertex2d((*p)[0][66],(*p)[1][66]);
+        glEnd();
+
+    }
+
+
+
 
 public:
-    void draw()
+    void draw(double headAngle)
     {
-       /* createWall();
-        createWindow();
-        createStairs();
-        createStick();
-        createRoof();*/
         createTorso();
+        createCabeza();
+        angulo=headAngle;
     }
 
     Vaca()
@@ -440,10 +382,15 @@ public:
         loadGlobalPoints();
 
         //Define operation matrix
-        matrix.scaling(15,15,opMatrix);
-        matrix.translation(-40,-15,opMatrix);
-
+        matrix.scaling(13,13,opMatrix);
+        matrix.translation(0,-17,opMatrix);
         //Load points in renderMatrix
+
         matrix.multiplication(opMatrix, globalPoints, renderMatrix);
+
+
+        matrix.rotation(angulo,opMatrix);
+
+        matrix.multiplication(opMatrix, HeadGlobalPoints, HeadRenderMatrix);
     }
 };

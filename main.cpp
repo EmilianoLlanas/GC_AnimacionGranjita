@@ -10,7 +10,8 @@
 #define PI 3.14159265
 #include "vaca.cpp"
 Cottage cottage;
-//Vaca vaca;
+Vaca vaca;
+double headAngle=-45;
 void init(void)
 {
      //Establece el color de la ventana de visualizacion
@@ -30,10 +31,20 @@ void init(void)
  }
 
  void createScene() {
+
     glClear(GL_COLOR_BUFFER_BIT);
 
     cottage.draw();
-    //vaca.draw();
+
+    if(headAngle>=-45.0){
+        vaca.draw(headAngle);
+        headAngle-=1.0;
+    }
+    if(headAngle<=1.0){
+        vaca.draw(headAngle);
+        headAngle+=1.0;
+    }
+
     glFlush();
  }
 

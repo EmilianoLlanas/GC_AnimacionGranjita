@@ -105,19 +105,26 @@
 	"matrix.cpp"
 	"linea.cpp"
 
-1648067514 c:\users\emiliano (trabajo)\documents\github\gc_animaciongranjita\matrix.cpp
+1648067963 c:\users\emiliano (trabajo)\documents\github\gc_animaciongranjita\matrix.cpp
 	<math.h>
 	<GL/glut.h>
 
-1648064971 c:\users\emiliano (trabajo)\documents\github\gc_animaciongranjita\linea.cpp
-
-1648064971 c:\users\emiliano (trabajo)\documents\github\gc_animaciongranjita\punto.cpp
+1648067962 c:\users\emiliano (trabajo)\documents\github\gc_animaciongranjita\linea.cpp
 	<GL/glut.h>
 	<iostream>
+	"punto.cpp"
+
+1648067963 c:\users\emiliano (trabajo)\documents\github\gc_animaciongranjita\punto.cpp
 	<GL/glut.h>
 	<iostream>
 
-1648065711 source:c:\users\emiliano (trabajo)\documents\github\gc_animaciongranjita\main.cpp
+1648085105 source:c:\users\emiliano (trabajo)\documents\github\gc_animaciongranjita\main.cpp
+	<GLUT/glut.h>
+	<GL/glut.h>
+	<stdlib.h>
+	<math.h>
+	"cottage.cpp"
+	"vaca.cpp"
 
 1648065239 c:\users\emiliano (trabajo)\documents\github\gc_animaciongranjita\cottage.cpp
 	<GL/glut.h>
@@ -125,18 +132,28 @@
 	"matrix.cpp"
 	"linea.cpp"
 
-1648066890 source:c:\users\emiliano (trabajo)\documents\github\gc_animaciongranjita\vaca.cpp
+1648085001 source:c:\users\emiliano (trabajo)\documents\github\gc_animaciongranjita\vaca.cpp
 	<GL/glut.h>
 	<iostream>
 	"matrix.cpp"
 	"linea.cpp"
 
-1648064971 source:c:\users\emiliano (trabajo)\documents\github\gc_animaciongranjita\linea.cpp
+1648067962 source:c:\users\emiliano (trabajo)\documents\github\gc_animaciongranjita\linea.cpp
 	<GL/glut.h>
 	<iostream>
 	"punto.cpp"
 
-1648064971 source:c:\users\emiliano (trabajo)\documents\github\gc_animaciongranjita\punto.cpp
+1648067963 source:c:\users\emiliano (trabajo)\documents\github\gc_animaciongranjita\punto.cpp
 	<GL/glut.h>
 	<iostream>
+
+1648067963 source:c:\users\emiliano (trabajo)\documents\github\gc_animaciongranjita\matrix.cpp
+	<math.h>
+	<GL/glut.h>
+
+1648085001 c:\users\emiliano (trabajo)\documents\github\gc_animaciongranjita\vaca.cpp
+	<GL/glut.h>
+	<iostream>
+	"matrix.cpp"
+	"linea.cpp"
 
