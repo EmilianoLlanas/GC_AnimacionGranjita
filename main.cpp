@@ -37,6 +37,12 @@ void init(void)
     glFlush();
  }
 
+void update(){
+    scene.update();
+
+    Sleep(15);
+}
+
  int main(int argc, char** argv)
  {
       //se inicializa la pantalla grafica
@@ -54,7 +60,11 @@ void init(void)
       //se envian los graficos a pantalla
       glutDisplayFunc(createScene);
 
+      glutIdleFunc(update);
+
       glutMainLoop();
 
       return 0;
   }
+
+

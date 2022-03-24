@@ -122,6 +122,7 @@
 }
 
 void Sun::createSun() {
+
     GLdouble (*p)[3][POINTS] = &renderMatrix;
 
     GLfloat colors[3] = {2.55,0.5,0};
