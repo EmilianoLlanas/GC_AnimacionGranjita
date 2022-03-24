@@ -3,12 +3,13 @@
 
 #include "../Objetos/cottage.h"
 #include "../Objetos/sun.h"
+#include "../Objetos/vaca.h"
 
 class Scene {
 private:
     Cottage cottage;
     Sun sun;
-
+    Vaca vaca;
 public:
     void draw();
 

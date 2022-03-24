@@ -134,13 +134,13 @@ void Sun::createSun() {
     coord[1] = (*p)[0][0];
     coord[2] = (*p)[1][0];
 
-    printf("radio %f \n", (*p)[0][25]);
+    //printf("radio %f \n", (*p)[0][25]);
 
     circulo.draw(coord,colors, width);
 
     //Rayos
     for(int i = 1; i<POINTS; i+=3){
-        printf("x1 %f y1 %f %f \n", (*p)[0][i], (*p)[1][i], (*p)[2][i]);
+       // printf("x1 %f y1 %f %f \n", (*p)[0][i], (*p)[1][i], (*p)[2][i]);
         GLfloat triangle[2][3];
         triangle[0][0] = (*p)[0][i];
         triangle[1][0] = (*p)[1][i];

@@ -38,9 +38,10 @@ void init(void)
  }
 
 void update(){
+    glClear(GL_COLOR_BUFFER_BIT);
     scene.update();
-
     Sleep(15);
+    glFlush();
 }
 
  int main(int argc, char** argv)
