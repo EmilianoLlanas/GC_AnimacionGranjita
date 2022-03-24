@@ -141,6 +141,54 @@
         globalPoints[0][32] = 0;
         globalPoints[1][32] = 0;
         globalPoints[2][32] = 1;
+
+        globalPoints[0][33] = 40;
+        globalPoints[1][33] = -10;
+        globalPoints[2][33] = 1;
+
+        globalPoints[0][34] = 46;
+        globalPoints[1][34] = -10;
+        globalPoints[2][34] = 1;
+
+        globalPoints[0][35] = 46;
+        globalPoints[1][35] = -7;
+        globalPoints[2][35] = 1;
+
+        globalPoints[0][36] = 45;
+        globalPoints[1][36] = -9;
+        globalPoints[2][36] = 1;
+
+        globalPoints[0][37] = 44;
+        globalPoints[1][37] = -7;
+        globalPoints[2][37] = 1;
+
+        globalPoints[0][38] = 43;
+        globalPoints[1][38] = -9;
+        globalPoints[2][38] = 1;
+
+        globalPoints[0][39] = 42;
+        globalPoints[1][39] = -6;
+        globalPoints[2][39] = 1;
+
+        globalPoints[0][40] = 42;
+        globalPoints[1][40] = -9;
+        globalPoints[2][40] = 1;
+
+        globalPoints[0][41] = 40;
+        globalPoints[1][41] = -6;
+        globalPoints[2][41] = 1;
+
+        globalPoints[0][42] = 41;
+        globalPoints[1][42] = -9;
+        globalPoints[2][42] = 1;
+
+        globalPoints[0][43] = 39;
+        globalPoints[1][43] = -6;
+        globalPoints[2][43] = 1;
+
+        globalPoints[0][44] = 40;
+        globalPoints[1][44] = -10;
+        globalPoints[2][44] = 1;
     }
 
 
@@ -175,11 +223,30 @@
         }
     }
 
+    void Tree::createGrass(){
+        GLdouble (*p)[3][POINTS] = &renderMatrix;
+        GLfloat colors [3] = {0.2, 0.8, 0.2};
+        GLint width = 3;
+        int x1, x2, y1, y2;
+        int i;
+
+        //pasto
+        for(i=33;i<44;i++){
+
+            x1 = (*p)[0][i]; y1 = (*p)[1][i];
+            x2 = (*p)[0][i+1]; y2 = (*p)[1][i+1];
+            linea.draw(x1, y1, x2, y2, colors, width);
+
+        }
+
+
+    }
     void Tree:: draw()
     {
         matrix.multiplication(opMatrix,*globalPoints,*renderMatrix,POINTS);
 
         createTree();
+        createGrass();
     }
 
 

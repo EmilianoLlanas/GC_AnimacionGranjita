@@ -23,6 +23,7 @@ private:
 
     void loadGlobalPoints();
     void createTree();
+    void createGrass();
 
 public:
 
