@@ -1,0 +1,98 @@
+# depslib dependency file v1.0
+1648085627 source:c:\users\churr\documents\graficas computacionales\pruebaheaders\herramientas\matrix.cpp
+	<math.h>
+	<iostream>
+	<GL/glut.h>
+	"matrix.h"
+
+1648088181 source:c:\users\churr\documents\graficas computacionales\pruebaheaders\main.cpp
+	<GLUT/glut.h>
+	<GL/glut.h>
+	"Escena/scene.h"
+
+1426371328 c:\program files\codeblocks\mingw\include\gl\glut.h
+	"freeglut_std.h"
+
+1426371328 c:\program files\codeblocks\mingw\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1648077552 source:c:\users\churr\documents\graficas computacionales\pruebaheaders\objetos\linea.cpp
+	"linea.h"
+
+1648080601 source:c:\users\churr\documents\graficas computacionales\pruebaheaders\objetos\punto.cpp
+	"punto.h"
+
+1648073794 c:\users\churr\documents\graficas computacionales\pruebaheaders\objetos\punto.h
+	<GL/glut.h>
+
+1648083471 c:\users\churr\documents\graficas computacionales\pruebaheaders\herramientas\matrix.h
+	<math.h>
+	<GL/glut.h>
+
+1648074632 c:\users\churr\documents\graficas computacionales\pruebaheaders\objetos\punto.cpp
+	"punto.h"
+
+1648077552 c:\users\churr\documents\graficas computacionales\pruebaheaders\objetos\linea.h
+	<GL/glut.h>
+	"punto.h"
+
+1648089154 source:c:\users\churr\documents\graficas computacionales\pruebaheaders\objetos\cottage.cpp
+	<GL/glut.h>
+	"../Herramientas/matrix.h"
+	"linea.h"
+	"cottage.h"
+
+1648087921 c:\users\churr\documents\graficas computacionales\pruebaheaders\objetos\cottage.h
+	<GL/glut.h>
+	"../Herramientas/matrix.h"
+	"linea.h"
+
+1648090481 source:c:\users\churr\documents\graficas computacionales\pruebaheaders\escena\scene.cpp
+	"scene.h"
+
+1648090524 c:\users\churr\documents\graficas computacionales\pruebaheaders\escena\scene.h
+	"../Objetos/cottage.h"
+	"../Objetos/sun.h"
+
+1648089953 source:c:\users\churr\documents\graficas computacionales\pruebaheaders\objetos\triangulo.cpp
+	"triangulo.h"
+
+1648089953 c:\users\churr\documents\graficas computacionales\pruebaheaders\objetos\triangulo.h
+	<GL/glut.h>
+	<iostream>
+	"linea.h"
+
+1648089516 source:c:\users\churr\documents\graficas computacionales\pruebaheaders\objetos\vaca.cpp
+
+1648090249 source:c:\users\churr\documents\graficas computacionales\pruebaheaders\objetos\circulo.cpp
+	<GL/glut.h>
+	<iostream>
+	<math.h>
+	"circulo.h"
+
+1648090187 c:\users\churr\documents\graficas computacionales\pruebaheaders\objetos\circulo.h
+	<GL/glut.h>
+	<iostream>
+	<math.h>
+	"linea.h"
+
+1648090261 c:\users\churr\documents\graficas computacionales\pruebaheaders\objetos\sun.h
+	<GL/glut.h>
+	<iostream>
+	"../Herramientas/matrix.h"
+	"linea.h"
+	"circulo.h"
+	"triangulo.h"
+	<math.h>
+
+1648090372 source:c:\users\churr\documents\graficas computacionales\pruebaheaders\objetos\sun.cpp
+	"sun.h"
+

@@ -4,15 +4,9 @@
 #include <GL/glut.h>
 #endif
 
-#include <stdlib.h>
-#include <math.h>
-#include "cottage.cpp"
-#include "sun.cpp"
+#include "Escena/scene.h"
 
-#define PI 3.14159265
-
-Cottage cottage;
-Sun sun;
+Scene scene;
 
 void init(void)
 {
@@ -35,8 +29,10 @@ void init(void)
  void createScene() {
     glClear(GL_COLOR_BUFFER_BIT);
 
-    cottage.draw();
-    sun.draw();
+    GLfloat color [3] = {1.0,0.0,0.0};
+    GLfloat width = 3.0;
+
+    scene.draw();
 
     glFlush();
  }
@@ -61,4 +57,4 @@ void init(void)
       glutMainLoop();
 
       return 0;
-}
+  }

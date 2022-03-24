@@ -2,12 +2,12 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="Granja" />
+		<Option title="PruebaHeaders" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/Granja" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Debug/PruebaHeaders" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="C:/Program Files/CodeBlocks/MinGW/bin" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
@@ -17,7 +17,7 @@
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/Granja" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Release/PruebaHeaders" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="C:/Program Files/CodeBlocks/MinGW/bin" />
 				<Option object_output="obj/Release/" />
 				<Option type="0" />
@@ -42,12 +42,27 @@
 			<Add library="gdi32" />
 			<Add directory="C:/Program Files/CodeBlocks/MinGW/lib" />
 		</Linker>
-		<Unit filename="circulo.cpp" />
-		<Unit filename="cottage.cpp" />
-		<Unit filename="linea.cpp" />
+		<Unit filename="Escena/scene.cpp" />
+		<Unit filename="Escena/scene.h" />
+		<Unit filename="Herramientas/matrix.cpp" />
+		<Unit filename="Herramientas/matrix.h" />
+		<Unit filename="Objetos/cottage.cpp" />
+		<Unit filename="Objetos/cottage.h" />
+		<Unit filename="Objetos/linea.cpp" />
+		<Unit filename="Objetos/linea.h" />
+		<Unit filename="Objetos/punto.cpp" />
+		<Unit filename="Objetos/punto.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="Objetos/sun.cpp" />
+		<Unit filename="Objetos/sun.h" />
+		<Unit filename="Objetos/triangulo.cpp" />
+		<Unit filename="Objetos/triangulo.h" />
+		<Unit filename="Objetos/vaca.cpp" />
+		<Unit filename="Objetos/vaca.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="matrix.cpp" />
-		<Unit filename="punto.cpp" />
-		<Extensions />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
 	</Project>
 </CodeBlocks_project_file>
