@@ -159,13 +159,19 @@ void Sun::scaling(GLfloat newscale){
 
 }
 
+void Sun::update(){
+    GLfloat sunscale=0.1;
+    GLfloat x = 8;
+    draw(sunscale, x);
+}
+
 void Sun::draw(GLfloat newscale, GLfloat newx)
 {
     createSun();
     //scaling(newscale);
 
     if(renderMatrix[0][0]>=700){
-        x = -2800;
+        x = -2795;
         y = 1;
     }else if(renderMatrix[0][0]>=0 && renderMatrix[1][0]>=0){
         y = -1;

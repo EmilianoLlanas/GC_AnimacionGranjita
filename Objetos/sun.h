@@ -39,6 +39,8 @@ public:
 
     void draw(GLfloat newscale, GLfloat newx);
 
+    void update();
+
     Sun();
 };
 

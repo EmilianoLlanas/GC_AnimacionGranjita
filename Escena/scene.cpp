@@ -34,10 +34,8 @@ void Scene::update() {
     tree1.draw();
     cottage.draw();
     vaca.update();
+    sun.update();
 
-    sunscale=0.1;
-    x = 8;
-    sun.draw(sunscale, x);
 
     draw();
     glFlush();

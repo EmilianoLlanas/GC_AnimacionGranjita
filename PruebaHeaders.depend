@@ -96,7 +96,7 @@
 1648090372 source:c:\users\churr\documents\graficas computacionales\pruebaheaders\objetos\sun.cpp
 	"sun.h"
 
-1648136041 source:c:\users\saman\documents\last one\graficas\gc_animaciongranjita\escena\scene.cpp
+1648137475 source:c:\users\saman\documents\last one\graficas\gc_animaciongranjita\escena\scene.cpp
 	"scene.h"
 
 1648135200 c:\users\saman\documents\last one\graficas\gc_animaciongranjita\escena\scene.h
@@ -121,7 +121,7 @@
 1648134014 c:\users\saman\documents\last one\graficas\gc_animaciongranjita\objetos\punto.h
 	<GL/glut.h>
 
-1648136825 c:\users\saman\documents\last one\graficas\gc_animaciongranjita\objetos\sun.h
+1648137504 c:\users\saman\documents\last one\graficas\gc_animaciongranjita\objetos\sun.h
 	<GL/glut.h>
 	<iostream>
 	"../Herramientas/matrix.h"
