@@ -387,13 +387,11 @@
         if (rotar > .5 && invertir){
         incremento = -.05;
         invertir = false;
-        printf("falso");
         }
 
         if (rotar < -.5 && !invertir){
             incremento = .05;
             invertir = true;
-            printf("verdadero");
         }
 
         rotar += incremento;
