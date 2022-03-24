@@ -12,6 +12,8 @@ private:
     Sun sun;
     Vaca vaca;
     Tree tree;
+    Tree tree2;
+    Tree tree1;
 public:
     void draw();
 

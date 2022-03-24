@@ -246,7 +246,10 @@
         matrix.multiplication(opMatrix,*globalPoints,*renderMatrix,POINTS);
 
         createTree();
-        createGrass();
+        if(defaultTranslation[0]==-20){
+             createGrass();
+        }
+
     }
 
 
@@ -264,7 +267,7 @@
         defaultTranslation[0] = x;
         defaultTranslation[1] = y;
 
-        matrix.translation(-20,-7.5,opMatrix);
+        matrix.translation(x,y,opMatrix);
     }
 
     void Tree::setDefaultRotation(GLdouble x, GLdouble y){

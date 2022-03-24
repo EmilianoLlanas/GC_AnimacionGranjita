@@ -411,4 +411,3 @@ Vaca::Vaca()
     invertir=true;
     invertir2=true;
 }
-

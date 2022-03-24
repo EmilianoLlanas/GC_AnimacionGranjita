@@ -103,7 +103,7 @@
         x1 = xcentro + radio * (cos(i * (PI/180)) * (180/PI));
         y1 = ycentro + radio * (sin(i * (PI/180)) * (180/PI));
 
-            printf("x1 %f \n", x1 + change[0][tcount]);
+            //printf("x1 %f \n", x1 + change[0][tcount]);
             globalPoints[0][pcount] = x1 + change[0][tcount];
             globalPoints[1][pcount] = y1 + change[1][tcount];
             globalPoints[2][pcount] = 1;
