@@ -34,7 +34,7 @@ void Scene::update() {
     vaca.update();
 
     glClear(GL_COLOR_BUFFER_BIT);
-    cottage.draw();
+    draw();
     sunUpdate();
     glFlush();
 
