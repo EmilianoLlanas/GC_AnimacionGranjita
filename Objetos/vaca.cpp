@@ -374,7 +374,6 @@ void Vaca::update(){
 
     rotar += incremento;
     rotateHead();
-    draw();
 }
 
 void Vaca::setDefaulScale(GLdouble x, GLdouble y){

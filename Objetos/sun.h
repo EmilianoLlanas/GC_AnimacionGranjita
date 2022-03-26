@@ -37,7 +37,7 @@ private:
 public:
     void scaling(GLfloat newscale);
 
-    void draw(GLfloat newscale, GLfloat newx);
+    void draw();
 
     void update();
 

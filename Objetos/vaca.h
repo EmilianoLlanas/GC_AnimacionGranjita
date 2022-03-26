@@ -24,8 +24,10 @@ private:
 
     GLdouble globalPoints [3][POINTS];
     GLdouble renderMatrix [3][POINTS];
+
     GLdouble headPoints [3][POINTS];
     GLdouble renderHeadMatrix [3][POINTS];
+
     GLdouble opMatrix [3][3] = {{1,0,0}, {0,1,0}, {0,0,1}};
     GLdouble opMatrixHead [3][3] = {{1,0,0}, {0,1,0}, {0,0,1}};
 

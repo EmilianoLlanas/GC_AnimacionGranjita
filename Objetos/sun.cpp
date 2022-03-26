@@ -160,16 +160,6 @@ void Sun::scaling(GLfloat newscale){
 }
 
 void Sun::update(){
-    GLfloat sunscale=0.1;
-    GLfloat x = 8;
-    draw(sunscale, x);
-}
-
-void Sun::draw(GLfloat newscale, GLfloat newx)
-{
-    createSun();
-    //scaling(newscale);
-
     if(renderMatrix[0][0]>=700){
         x = -2795;
         y = 1;
@@ -180,9 +170,14 @@ void Sun::draw(GLfloat newscale, GLfloat newx)
     }
 
     matrix.translation(x,y,opMatrix);
+}
+
+void Sun::draw()
+{
+    //scaling(newscale);
     matrix.multiplication(opMatrix, *globalPoints, *renderMatrix, POINTS);
 
-
+    createSun();
 }
 
 Sun::Sun(){
@@ -192,7 +187,6 @@ Sun::Sun(){
     matrix.translation(x,y,opMatrix);
 
     scaling(scale);
-    //matrix.scaling(scale,scale,opMatrix);
 
     //Load points in renderMatrix
     matrix.multiplication(opMatrix, *globalPoints, *renderMatrix, POINTS);

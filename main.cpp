@@ -29,18 +29,14 @@ void init(void)
  void createScene() {
     glClear(GL_COLOR_BUFFER_BIT);
 
-    GLfloat color [3] = {1.0,0.0,0.0};
-    GLfloat width = 3.0;
-
     scene.draw();
 
     glFlush();
  }
 
-void update(){
-    glClear(GL_COLOR_BUFFER_BIT);
+void update(){ // Llamar draw update
     scene.update();
-    Sleep(15);
+    Sleep(30);
     glFlush();
 }
 
